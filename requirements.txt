@@ -1,0 +1,14 @@
+ultralytics==8.3.237
+opencv-python-headless==4.9.0.80
+# NumPy 1.x cannot unpickle checkpoints saved with NumPy 2.x (PCG64 BitGenerator error in torch.load).
+numpy==2.2.4
+Pillow==10.0.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+boto3==1.34.0
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.0
+pydantic-settings==2.0.0
+structlog==25.5.0
+geoalchemy2==0.18.1
