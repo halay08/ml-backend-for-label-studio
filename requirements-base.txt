@@ -3,3 +3,4 @@ gunicorn==22.0.0
 # label_studio_ml.api imports rq; not always installed as transitive dep in slim images
 rq==1.16.2
 redis==5.0.8
+httpx>=0.28.1

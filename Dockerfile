@@ -3,7 +3,7 @@
 # Build: docker build -f ml_backend/Dockerfile -t heartexlab/ml-backend:latest .
 #   Override weights: --build-arg SAM_PRELOAD_PT=sam2_t.pt --build-arg SAM_ASSETS_RELEASE=v8.4.0
 #   Skip download: --build-arg SAM_PRELOAD_PT=
-# Runtime: sam_backend/Dockerfile FROM this image + COPY shared + sam_backend
+# Runtime: sphere-ai/ml_backend/Dockerfile FROM this image + COPY shared + ml_backend
 FROM python:3.12-slim
 ARG TEST_ENV=false
 # Ultralytics release assets: https://github.com/ultralytics/assets/releases
